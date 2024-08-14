@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Tema Dark e Customizações */
+body {
+    background-color: #212529; /* Escuro */
+    color: #e9ecef; /* Claro */
+    margin-top: 70px; /* Para ajustar o espaço para o menu fixo */
+}
+
+header, footer {
+    background-color: #ffc107; /* Cor warning do Bootstrap */
+}
+
+.nav-link.active {
+    background-color: #ffc107 !important;
+    color: #212529 !important;
+}
+
+.progress {
+    height: 30px;
+}
+
+.progress-bar {
+    background-color: #28a745; /* Cor padrão da barra de progresso */
+    line-height: 30px; /* Alinha o texto verticalmente */
+    color: white;
+}
+
+
+
+
+
+/* Responsividade do vídeo */
+.embed-responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+}
+
+.embed-responsive-16by9::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.embed-responsive-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
